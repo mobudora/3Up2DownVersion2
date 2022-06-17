@@ -1,0 +1,948 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		427938492846036600DAF41B /* DetailRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427938482846036600DAF41B /* DetailRecommendViewController.swift */; };
+		4279384B2846038800DAF41B /* DetailRecommend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4279384A2846038700DAF41B /* DetailRecommend.storyboard */; };
+		4279384D2846075D00DAF41B /* DetailFuture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4279384C2846075D00DAF41B /* DetailFuture.storyboard */; };
+		4279384F284607A000DAF41B /* DetailFutureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4279384E284607A000DAF41B /* DetailFutureViewController.swift */; };
+		4283F0EC2846918F00855069 /* AddMemoFriends.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4283F0EB2846918F00855069 /* AddMemoFriends.storyboard */; };
+		4283F0EE284691B700855069 /* AddMemoFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4283F0ED284691B700855069 /* AddMemoFriendsViewController.swift */; };
+		4283F0F028470ACF00855069 /* AddFriends.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4283F0EF28470ACF00855069 /* AddFriends.storyboard */; };
+		4283F0F228470AFD00855069 /* AddFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4283F0F128470AFD00855069 /* AddFriendsViewController.swift */; };
+		4283F0F428470E8200855069 /* WhitchAddFriends.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4283F0F328470E8200855069 /* WhitchAddFriends.storyboard */; };
+		4283F0F628470EA600855069 /* WhitchAddFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4283F0F528470EA600855069 /* WhitchAddFriendsViewController.swift */; };
+		4283F0F8284736DA00855069 /* UserListTableViewReloadProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4283F0F7284736DA00855069 /* UserListTableViewReloadProtocol.swift */; };
+		4283F0FA28474C7C00855069 /* DetailAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4283F0F928474C7C00855069 /* DetailAccount.storyboard */; };
+		4283F0FC28474C9500855069 /* DetailAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4283F0FB28474C9500855069 /* DetailAccountViewController.swift */; };
+		4284569D2834978D00FF7EF8 /* HomeMonthToIncomeAndFixedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4284569C2834978D00FF7EF8 /* HomeMonthToIncomeAndFixedProtocol.swift */; };
+		4284569F2834F7FB00FF7EF8 /* HomeCollectionUpDateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4284569E2834F7FB00FF7EF8 /* HomeCollectionUpDateProtocol.swift */; };
+		428456A22835DC3300FF7EF8 /* AddCollectionSemiModal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 428456A12835DC3300FF7EF8 /* AddCollectionSemiModal.storyboard */; };
+		428456A42835DC5E00FF7EF8 /* AddCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428456A32835DC5E00FF7EF8 /* AddCollectionViewController.swift */; };
+		42848BA2283751A90036B5CB /* CostMothSuperCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42848BA1283751A90036B5CB /* CostMothSuperCategory.swift */; };
+		4289B3D7282E299500B7B8BD /* Income.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4289B3D6282E299500B7B8BD /* Income.swift */; };
+		428BF917283607B900C1C9D1 /* AddCollectionViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428BF916283607B900C1C9D1 /* AddCollectionViewCellProtocol.swift */; };
+		429FB7E528128A2F00067EE7 /* dateDiaryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FB7E328128A2F00067EE7 /* dateDiaryCollectionViewCell.swift */; };
+		429FB7E628128A2F00067EE7 /* dateDiaryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 429FB7E428128A2F00067EE7 /* dateDiaryCollectionViewCell.xib */; };
+		42A23DE52845DCF50088754D /* DetailAboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A23DE42845DCF40088754D /* DetailAboutAppViewController.swift */; };
+		42A23DE72845DD260088754D /* DetailAboutApp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42A23DE62845DD260088754D /* DetailAboutApp.storyboard */; };
+		42A23DE92845E5EA0088754D /* DetailHowToUse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42A23DE82845E5EA0088754D /* DetailHowToUse.storyboard */; };
+		42A23DEB2845E6080088754D /* DetailHowToUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A23DEA2845E6080088754D /* DetailHowToUseViewController.swift */; };
+		42AAC2F32817E16E004B967C /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AAC2F22817E16E004B967C /* DateManager.swift */; };
+		42AAC2F5281964FA004B967C /* PassIncomeAndFixedCollectionCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AAC2F4281964FA004B967C /* PassIncomeAndFixedCollectionCellProtocol.swift */; };
+		42AC4BB4283CB81D00C716BA /* DaySubCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AC4BB3283CB81D00C716BA /* DaySubCategory.swift */; };
+		42AF6E8328337B7900E5E6AE /* IncomeAndFixedToHomeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AF6E8228337B7900E5E6AE /* IncomeAndFixedToHomeProtocol.swift */; };
+		42B5E5AE28323B42000E5DC2 /* FixedCost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B5E5AD28323B42000E5DC2 /* FixedCost.swift */; };
+		42C48CC2283B49640007617C /* CategoryMoneyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C48CC0283B49640007617C /* CategoryMoneyTableViewCell.swift */; };
+		42C48CC3283B49640007617C /* CategoryMoneyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42C48CC1283B49640007617C /* CategoryMoneyTableViewCell.xib */; };
+		42C48CC6283B49EF0007617C /* DateCategoryAndSumMoneyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C48CC4283B49EF0007617C /* DateCategoryAndSumMoneyTableViewCell.swift */; };
+		42C48CC7283B49EF0007617C /* DateCategoryAndSumMoneyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42C48CC5283B49EF0007617C /* DateCategoryAndSumMoneyTableViewCell.xib */; };
+		42C48CCA283B52C00007617C /* DateContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C48CC8283B52C00007617C /* DateContentCollectionViewCell.swift */; };
+		42C48CCB283B52C00007617C /* DateContentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42C48CC9283B52C00007617C /* DateContentCollectionViewCell.xib */; };
+		42D73305282162B20033B7FA /* PassHomeViewFromInputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D73304282162B20033B7FA /* PassHomeViewFromInputViewProtocol.swift */; };
+		42D7330728220BFB0033B7FA /* SuperCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D7330628220BFB0033B7FA /* SuperCategory.swift */; };
+		86647B582824AC8400491483 /* SubCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86647B572824AC8400491483 /* SubCategory.swift */; };
+		86647B5A282FE02200491483 /* PlusMinusProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86647B59282FE02200491483 /* PlusMinusProtocol.swift */; };
+		86647B5C283136ED00491483 /* PlusMinusCollectionReloadProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86647B5B283136ED00491483 /* PlusMinusCollectionReloadProtocol.swift */; };
+		8670CC1C28016A0700A66426 /* InputCategorySemiModal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8670CC1B28016A0700A66426 /* InputCategorySemiModal.storyboard */; };
+		8670CC1E28016A3600A66426 /* InputCategorySemiModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8670CC1D28016A3600A66426 /* InputCategorySemiModalViewController.swift */; };
+		8670CC2028016BD900A66426 /* PassCategoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8670CC1F28016BD900A66426 /* PassCategoryProtocol.swift */; };
+		8670CC2228027D2100A66426 /* InputSubCategorySemiModal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8670CC2128027D2100A66426 /* InputSubCategorySemiModal.storyboard */; };
+		8670CC2428027D5D00A66426 /* InputSubCategorySemiModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8670CC2328027D5D00A66426 /* InputSubCategorySemiModalViewController.swift */; };
+		8670CC262802957C00A66426 /* InputCalculatorSemiModal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8670CC252802957C00A66426 /* InputCalculatorSemiModal.storyboard */; };
+		8670CC292803C50C00A66426 /* CalendarStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8670CC282803C50C00A66426 /* CalendarStackView.swift */; };
+		86C4F0F127F2D42500E1AB43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4F0F027F2D42500E1AB43 /* AppDelegate.swift */; };
+		86C4F0F327F2D42500E1AB43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4F0F227F2D42500E1AB43 /* SceneDelegate.swift */; };
+		86C4F0F827F2D42500E1AB43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C4F0F627F2D42500E1AB43 /* Main.storyboard */; };
+		86C4F0FA27F2D42600E1AB43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86C4F0F927F2D42600E1AB43 /* Assets.xcassets */; };
+		86C4F0FD27F2D42600E1AB43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C4F0FB27F2D42600E1AB43 /* LaunchScreen.storyboard */; };
+		86C4F10527F2D49600E1AB43 /* Note.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C4F10427F2D49600E1AB43 /* Note.storyboard */; };
+		86C4F10727F2D4F200E1AB43 /* Top.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C4F10627F2D4F200E1AB43 /* Top.storyboard */; };
+		86C4F10B27F2D55700E1AB43 /* FirstLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C4F10A27F2D55700E1AB43 /* FirstLogin.storyboard */; };
+		86C4F10D27F2D57C00E1AB43 /* WelcomeLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C4F10C27F2D57C00E1AB43 /* WelcomeLogin.storyboard */; };
+		86C4F10F27F2D59200E1AB43 /* AlreadyLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C4F10E27F2D59200E1AB43 /* AlreadyLogin.storyboard */; };
+		86C4F11127F2D5B400E1AB43 /* Password.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C4F11027F2D5B400E1AB43 /* Password.storyboard */; };
+		86C4F11327F2D5CB00E1AB43 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C4F11227F2D5CB00E1AB43 /* Home.storyboard */; };
+		86C4F11527F2D5F100E1AB43 /* DetailSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C4F11427F2D5F100E1AB43 /* DetailSetting.storyboard */; };
+		86C4F11727F2D62E00E1AB43 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C4F11627F2D62E00E1AB43 /* Calendar.storyboard */; };
+		86C4F11F27F2D7CC00E1AB43 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4F11E27F2D7CC00E1AB43 /* UIColor-Extension.swift */; };
+		86C4F12127F2D7FC00E1AB43 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4F12027F2D7FC00E1AB43 /* User.swift */; };
+		86C4F12427F2D87000E1AB43 /* incomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4F12227F2D87000E1AB43 /* incomeTableViewCell.swift */; };
+		86C4F12527F2D87000E1AB43 /* incomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86C4F12327F2D87000E1AB43 /* incomeTableViewCell.xib */; };
+		86C4F12827F2D8B000E1AB43 /* incomePlusMinusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4F12627F2D8B000E1AB43 /* incomePlusMinusTableViewCell.swift */; };
+		86C4F12927F2D8B000E1AB43 /* incomePlusMinusTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86C4F12727F2D8B000E1AB43 /* incomePlusMinusTableViewCell.xib */; };
+		86C4F12C27F2D92900E1AB43 /* livingExpensesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4F12A27F2D92900E1AB43 /* livingExpensesCollectionViewCell.swift */; };
+		86C4F12D27F2D92900E1AB43 /* livingExpensesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86C4F12B27F2D92900E1AB43 /* livingExpensesCollectionViewCell.xib */; };
+		86C4F13027F2D98200E1AB43 /* DetailSettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4F12E27F2D98100E1AB43 /* DetailSettingTableViewCell.swift */; };
+		86C4F13127F2D98200E1AB43 /* DetailSettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86C4F12F27F2D98100E1AB43 /* DetailSettingTableViewCell.xib */; };
+		86C4F13427F2D9C800E1AB43 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4F13227F2D9C800E1AB43 /* ContactTableViewCell.swift */; };
+		86C4F13527F2D9C800E1AB43 /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86C4F13327F2D9C800E1AB43 /* ContactTableViewCell.xib */; };
+		86C4F13727F2DA1B00E1AB43 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4F13627F2DA1B00E1AB43 /* HomeViewController.swift */; };
+		86C4F13927F2DA4800E1AB43 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4F13827F2DA4800E1AB43 /* TopViewController.swift */; };
+		86C4F13B27F2DA6F00E1AB43 /* FirstLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4F13A27F2DA6F00E1AB43 /* FirstLoginViewController.swift */; };
+		86C4F13D27F2DA8900E1AB43 /* AlreadyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4F13C27F2DA8900E1AB43 /* AlreadyLoginViewController.swift */; };
+		86C4F13F27F2DAA800E1AB43 /* WelcomeLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4F13E27F2DAA800E1AB43 /* WelcomeLoginViewController.swift */; };
+		86C4F14127F2DAB600E1AB43 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4F14027F2DAB600E1AB43 /* PasswordViewController.swift */; };
+		86C4F14327F2DAD200E1AB43 /* DetailSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4F14227F2DAD100E1AB43 /* DetailSettingViewController.swift */; };
+		86C4F14527F2DADF00E1AB43 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4F14427F2DADF00E1AB43 /* CalendarViewController.swift */; };
+		86C4F14927F2DAFA00E1AB43 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4F14827F2DAFA00E1AB43 /* NoteViewController.swift */; };
+		86C4F14C27F2DF7D00E1AB43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86C4F14B27F2DF7D00E1AB43 /* GoogleService-Info.plist */; };
+		86C4F14F27F2EB3800E1AB43 /* incomeAndFixedCostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4F14D27F2EB3800E1AB43 /* incomeAndFixedCostCollectionViewCell.swift */; };
+		86C4F15027F2EB3800E1AB43 /* incomeAndFixedCostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86C4F14E27F2EB3800E1AB43 /* incomeAndFixedCostCollectionViewCell.xib */; };
+		86C4F15427F2F0D200E1AB43 /* ChatRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C4F15327F2F0D200E1AB43 /* ChatRoom.storyboard */; };
+		86C4F15627F2F12E00E1AB43 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4F15527F2F12E00E1AB43 /* ChatRoomViewController.swift */; };
+		86C4F15927F2F4DA00E1AB43 /* partnerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4F15727F2F4DA00E1AB43 /* partnerTableViewCell.swift */; };
+		86C4F15A27F2F4DA00E1AB43 /* partnerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86C4F15827F2F4DA00E1AB43 /* partnerTableViewCell.xib */; };
+		86C4F15C27F31D3800E1AB43 /* ChatInputAccessory.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86C4F15B27F31D3800E1AB43 /* ChatInputAccessory.xib */; };
+		86C4F15E27F31E4200E1AB43 /* ChatInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4F15D27F31E4200E1AB43 /* ChatInputAccessoryView.swift */; };
+		86C4F16027F5E56300E1AB43 /* UserList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C4F15F27F5E56300E1AB43 /* UserList.storyboard */; };
+		86C4F16427F5E68200E1AB43 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4F16327F5E68200E1AB43 /* UserListViewController.swift */; };
+		86C4F16827F6855100E1AB43 /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4F16727F6855100E1AB43 /* ChatRoom.swift */; };
+		86C4F16A27F6F3EA00E1AB43 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4F16927F6F3EA00E1AB43 /* Message.swift */; };
+		86CBC20427FABB0E007F192A /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 86CBC20327FABB0E007F192A /* RxCocoa */; };
+		86CBC20627FABB0E007F192A /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 86CBC20527FABB0E007F192A /* RxRelay */; };
+		86CBC20827FABB0E007F192A /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 86CBC20727FABB0E007F192A /* RxSwift */; };
+		86CBC20B27FABD64007F192A /* UIView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CBC20A27FABD64007F192A /* UIView-Extension.swift */; };
+		86CBC20F27FAF098007F192A /* CalendarLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CBC20E27FAF098007F192A /* CalendarLabel.swift */; };
+		86CBC21127FAF3AA007F192A /* CalendarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CBC21027FAF3AA007F192A /* CalendarImageView.swift */; };
+		86CBC21327FD262B007F192A /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CBC21227FD262B007F192A /* InputViewController.swift */; };
+		86CBC21627FD2714007F192A /* InputLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CBC21527FD2714007F192A /* InputLabel.swift */; };
+		86CBC21827FD4D50007F192A /* Input.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86CBC21727FD4D50007F192A /* Input.storyboard */; };
+		86CBC21A27FD8EC2007F192A /* InputButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CBC21927FD8EC2007F192A /* InputButton.swift */; };
+		86E642FB2845A4B30025A8D8 /* DetailTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E642FA2845A4B30025A8D8 /* DetailTextViewController.swift */; };
+		86E642FD2845A4CA0025A8D8 /* DetailText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86E642FC2845A4CA0025A8D8 /* DetailText.storyboard */; };
+		86F819A927FEC5BA00FCF325 /* InputCalculatorSemiModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F819A827FEC5BA00FCF325 /* InputCalculatorSemiModalViewController.swift */; };
+		86F819B528000FFE00FCF325 /* PassCaluculatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F819B428000FFE00FCF325 /* PassCaluculatorProtocol.swift */; };
+		AB4085F4653B2543FAD20AE0 /* Pods_HouseBook6.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5072B8E5C17244648DEE6F3 /* Pods_HouseBook6.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		42320A73284A46C200C2A890 /* HouseBook6.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HouseBook6.entitlements; sourceTree = "<group>"; };
+		427938482846036600DAF41B /* DetailRecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailRecommendViewController.swift; path = HouseBook6/Storyboards/DetailRecommendViewController.swift; sourceTree = SOURCE_ROOT; };
+		4279384A2846038700DAF41B /* DetailRecommend.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailRecommend.storyboard; sourceTree = "<group>"; };
+		4279384C2846075D00DAF41B /* DetailFuture.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailFuture.storyboard; sourceTree = "<group>"; };
+		4279384E284607A000DAF41B /* DetailFutureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFutureViewController.swift; sourceTree = "<group>"; };
+		4283F0EB2846918F00855069 /* AddMemoFriends.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddMemoFriends.storyboard; sourceTree = "<group>"; };
+		4283F0ED284691B700855069 /* AddMemoFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddMemoFriendsViewController.swift; path = HouseBook6/Controllers/AddMemoFriendsViewController.swift; sourceTree = SOURCE_ROOT; };
+		4283F0EF28470ACF00855069 /* AddFriends.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddFriends.storyboard; sourceTree = "<group>"; };
+		4283F0F128470AFD00855069 /* AddFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendsViewController.swift; sourceTree = "<group>"; };
+		4283F0F328470E8200855069 /* WhitchAddFriends.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WhitchAddFriends.storyboard; sourceTree = "<group>"; };
+		4283F0F528470EA600855069 /* WhitchAddFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitchAddFriendsViewController.swift; sourceTree = "<group>"; };
+		4283F0F7284736DA00855069 /* UserListTableViewReloadProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewReloadProtocol.swift; sourceTree = "<group>"; };
+		4283F0F928474C7C00855069 /* DetailAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailAccount.storyboard; sourceTree = "<group>"; };
+		4283F0FB28474C9500855069 /* DetailAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAccountViewController.swift; sourceTree = "<group>"; };
+		4284569C2834978D00FF7EF8 /* HomeMonthToIncomeAndFixedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMonthToIncomeAndFixedProtocol.swift; sourceTree = "<group>"; };
+		4284569E2834F7FB00FF7EF8 /* HomeCollectionUpDateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionUpDateProtocol.swift; sourceTree = "<group>"; };
+		428456A12835DC3300FF7EF8 /* AddCollectionSemiModal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddCollectionSemiModal.storyboard; sourceTree = "<group>"; };
+		428456A32835DC5E00FF7EF8 /* AddCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCollectionViewController.swift; sourceTree = "<group>"; };
+		42848BA1283751A90036B5CB /* CostMothSuperCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostMothSuperCategory.swift; sourceTree = "<group>"; };
+		4289B3D6282E299500B7B8BD /* Income.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Income.swift; sourceTree = "<group>"; };
+		428BF916283607B900C1C9D1 /* AddCollectionViewCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCollectionViewCellProtocol.swift; sourceTree = "<group>"; };
+		429FB7E328128A2F00067EE7 /* dateDiaryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateDiaryCollectionViewCell.swift; sourceTree = "<group>"; };
+		429FB7E428128A2F00067EE7 /* dateDiaryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = dateDiaryCollectionViewCell.xib; sourceTree = "<group>"; };
+		42A23DE42845DCF40088754D /* DetailAboutAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAboutAppViewController.swift; sourceTree = "<group>"; };
+		42A23DE62845DD260088754D /* DetailAboutApp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailAboutApp.storyboard; sourceTree = "<group>"; };
+		42A23DE82845E5EA0088754D /* DetailHowToUse.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailHowToUse.storyboard; sourceTree = "<group>"; };
+		42A23DEA2845E6080088754D /* DetailHowToUseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailHowToUseViewController.swift; path = HouseBook6/Storyboards/DetailHowToUseViewController.swift; sourceTree = SOURCE_ROOT; };
+		42AAC2F22817E16E004B967C /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
+		42AAC2F4281964FA004B967C /* PassIncomeAndFixedCollectionCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassIncomeAndFixedCollectionCellProtocol.swift; sourceTree = "<group>"; };
+		42AC4BB3283CB81D00C716BA /* DaySubCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySubCategory.swift; sourceTree = "<group>"; };
+		42AF6E8228337B7900E5E6AE /* IncomeAndFixedToHomeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeAndFixedToHomeProtocol.swift; sourceTree = "<group>"; };
+		42B5E5AD28323B42000E5DC2 /* FixedCost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedCost.swift; sourceTree = "<group>"; };
+		42C48CC0283B49640007617C /* CategoryMoneyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryMoneyTableViewCell.swift; sourceTree = "<group>"; };
+		42C48CC1283B49640007617C /* CategoryMoneyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryMoneyTableViewCell.xib; sourceTree = "<group>"; };
+		42C48CC4283B49EF0007617C /* DateCategoryAndSumMoneyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCategoryAndSumMoneyTableViewCell.swift; sourceTree = "<group>"; };
+		42C48CC5283B49EF0007617C /* DateCategoryAndSumMoneyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateCategoryAndSumMoneyTableViewCell.xib; sourceTree = "<group>"; };
+		42C48CC8283B52C00007617C /* DateContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateContentCollectionViewCell.swift; sourceTree = "<group>"; };
+		42C48CC9283B52C00007617C /* DateContentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateContentCollectionViewCell.xib; sourceTree = "<group>"; };
+		42D73304282162B20033B7FA /* PassHomeViewFromInputViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassHomeViewFromInputViewProtocol.swift; sourceTree = "<group>"; };
+		42D7330628220BFB0033B7FA /* SuperCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperCategory.swift; sourceTree = "<group>"; };
+		6C5A18E3489511FBCE43732D /* Pods-HouseBook6.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseBook6.debug.xcconfig"; path = "Target Support Files/Pods-HouseBook6/Pods-HouseBook6.debug.xcconfig"; sourceTree = "<group>"; };
+		86647B572824AC8400491483 /* SubCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategory.swift; sourceTree = "<group>"; };
+		86647B59282FE02200491483 /* PlusMinusProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusMinusProtocol.swift; sourceTree = "<group>"; };
+		86647B5B283136ED00491483 /* PlusMinusCollectionReloadProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusMinusCollectionReloadProtocol.swift; sourceTree = "<group>"; };
+		8670CC1B28016A0700A66426 /* InputCategorySemiModal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InputCategorySemiModal.storyboard; sourceTree = "<group>"; };
+		8670CC1D28016A3600A66426 /* InputCategorySemiModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCategorySemiModalViewController.swift; sourceTree = "<group>"; };
+		8670CC1F28016BD900A66426 /* PassCategoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassCategoryProtocol.swift; sourceTree = "<group>"; };
+		8670CC2128027D2100A66426 /* InputSubCategorySemiModal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InputSubCategorySemiModal.storyboard; sourceTree = "<group>"; };
+		8670CC2328027D5D00A66426 /* InputSubCategorySemiModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputSubCategorySemiModalViewController.swift; sourceTree = "<group>"; };
+		8670CC252802957C00A66426 /* InputCalculatorSemiModal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InputCalculatorSemiModal.storyboard; sourceTree = "<group>"; };
+		8670CC282803C50C00A66426 /* CalendarStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarStackView.swift; sourceTree = "<group>"; };
+		86C4F0ED27F2D42500E1AB43 /* HouseBook6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HouseBook6.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86C4F0F027F2D42500E1AB43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		86C4F0F227F2D42500E1AB43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		86C4F0F727F2D42500E1AB43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		86C4F0F927F2D42600E1AB43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		86C4F0FC27F2D42600E1AB43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		86C4F0FE27F2D42600E1AB43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86C4F10427F2D49600E1AB43 /* Note.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Note.storyboard; sourceTree = "<group>"; };
+		86C4F10627F2D4F200E1AB43 /* Top.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Top.storyboard; sourceTree = "<group>"; };
+		86C4F10A27F2D55700E1AB43 /* FirstLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstLogin.storyboard; sourceTree = "<group>"; };
+		86C4F10C27F2D57C00E1AB43 /* WelcomeLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WelcomeLogin.storyboard; sourceTree = "<group>"; };
+		86C4F10E27F2D59200E1AB43 /* AlreadyLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlreadyLogin.storyboard; sourceTree = "<group>"; };
+		86C4F11027F2D5B400E1AB43 /* Password.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Password.storyboard; sourceTree = "<group>"; };
+		86C4F11227F2D5CB00E1AB43 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		86C4F11427F2D5F100E1AB43 /* DetailSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailSetting.storyboard; sourceTree = "<group>"; };
+		86C4F11627F2D62E00E1AB43 /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
+		86C4F11E27F2D7CC00E1AB43 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		86C4F12027F2D7FC00E1AB43 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		86C4F12227F2D87000E1AB43 /* incomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = incomeTableViewCell.swift; sourceTree = "<group>"; };
+		86C4F12327F2D87000E1AB43 /* incomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = incomeTableViewCell.xib; sourceTree = "<group>"; };
+		86C4F12627F2D8B000E1AB43 /* incomePlusMinusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = incomePlusMinusTableViewCell.swift; sourceTree = "<group>"; };
+		86C4F12727F2D8B000E1AB43 /* incomePlusMinusTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = incomePlusMinusTableViewCell.xib; sourceTree = "<group>"; };
+		86C4F12A27F2D92900E1AB43 /* livingExpensesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = livingExpensesCollectionViewCell.swift; sourceTree = "<group>"; };
+		86C4F12B27F2D92900E1AB43 /* livingExpensesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = livingExpensesCollectionViewCell.xib; sourceTree = "<group>"; };
+		86C4F12E27F2D98100E1AB43 /* DetailSettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSettingTableViewCell.swift; sourceTree = "<group>"; };
+		86C4F12F27F2D98100E1AB43 /* DetailSettingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailSettingTableViewCell.xib; sourceTree = "<group>"; };
+		86C4F13227F2D9C800E1AB43 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		86C4F13327F2D9C800E1AB43 /* ContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
+		86C4F13627F2DA1B00E1AB43 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		86C4F13827F2DA4800E1AB43 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		86C4F13A27F2DA6F00E1AB43 /* FirstLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLoginViewController.swift; sourceTree = "<group>"; };
+		86C4F13C27F2DA8900E1AB43 /* AlreadyLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlreadyLoginViewController.swift; sourceTree = "<group>"; };
+		86C4F13E27F2DAA800E1AB43 /* WelcomeLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeLoginViewController.swift; sourceTree = "<group>"; };
+		86C4F14027F2DAB600E1AB43 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		86C4F14227F2DAD100E1AB43 /* DetailSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSettingViewController.swift; sourceTree = "<group>"; };
+		86C4F14427F2DADF00E1AB43 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		86C4F14827F2DAFA00E1AB43 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		86C4F14B27F2DF7D00E1AB43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		86C4F14D27F2EB3800E1AB43 /* incomeAndFixedCostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = incomeAndFixedCostCollectionViewCell.swift; sourceTree = "<group>"; };
+		86C4F14E27F2EB3800E1AB43 /* incomeAndFixedCostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = incomeAndFixedCostCollectionViewCell.xib; sourceTree = "<group>"; };
+		86C4F15327F2F0D200E1AB43 /* ChatRoom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatRoom.storyboard; sourceTree = "<group>"; };
+		86C4F15527F2F12E00E1AB43 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		86C4F15727F2F4DA00E1AB43 /* partnerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partnerTableViewCell.swift; sourceTree = "<group>"; };
+		86C4F15827F2F4DA00E1AB43 /* partnerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = partnerTableViewCell.xib; sourceTree = "<group>"; };
+		86C4F15B27F31D3800E1AB43 /* ChatInputAccessory.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatInputAccessory.xib; sourceTree = "<group>"; };
+		86C4F15D27F31E4200E1AB43 /* ChatInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInputAccessoryView.swift; sourceTree = "<group>"; };
+		86C4F15F27F5E56300E1AB43 /* UserList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserList.storyboard; sourceTree = "<group>"; };
+		86C4F16327F5E68200E1AB43 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		86C4F16727F6855100E1AB43 /* ChatRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
+		86C4F16927F6F3EA00E1AB43 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		86CBC20A27FABD64007F192A /* UIView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Extension.swift"; sourceTree = "<group>"; };
+		86CBC20E27FAF098007F192A /* CalendarLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarLabel.swift; sourceTree = "<group>"; };
+		86CBC21027FAF3AA007F192A /* CalendarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarImageView.swift; sourceTree = "<group>"; };
+		86CBC21227FD262B007F192A /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		86CBC21527FD2714007F192A /* InputLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputLabel.swift; sourceTree = "<group>"; };
+		86CBC21727FD4D50007F192A /* Input.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Input.storyboard; sourceTree = "<group>"; };
+		86CBC21927FD8EC2007F192A /* InputButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputButton.swift; sourceTree = "<group>"; };
+		86E642FA2845A4B30025A8D8 /* DetailTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTextViewController.swift; sourceTree = "<group>"; };
+		86E642FC2845A4CA0025A8D8 /* DetailText.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailText.storyboard; sourceTree = "<group>"; };
+		86F819A827FEC5BA00FCF325 /* InputCalculatorSemiModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCalculatorSemiModalViewController.swift; sourceTree = "<group>"; };
+		86F819B428000FFE00FCF325 /* PassCaluculatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassCaluculatorProtocol.swift; sourceTree = "<group>"; };
+		CAFF069EF96C52C2004E8D11 /* Pods-HouseBook6.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseBook6.release.xcconfig"; path = "Target Support Files/Pods-HouseBook6/Pods-HouseBook6.release.xcconfig"; sourceTree = "<group>"; };
+		D5072B8E5C17244648DEE6F3 /* Pods_HouseBook6.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HouseBook6.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86C4F0EA27F2D42500E1AB43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86CBC20627FABB0E007F192A /* RxRelay in Frameworks */,
+				86CBC20427FABB0E007F192A /* RxCocoa in Frameworks */,
+				86CBC20827FABB0E007F192A /* RxSwift in Frameworks */,
+				AB4085F4653B2543FAD20AE0 /* Pods_HouseBook6.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		86C4F0E427F2D42500E1AB43 = {
+			isa = PBXGroup;
+			children = (
+				86C4F0EF27F2D42500E1AB43 /* HouseBook6 */,
+				86C4F0EE27F2D42500E1AB43 /* Products */,
+				CCC0327432F8C52DB3967CAA /* Pods */,
+				D087D8CA8B568646FA782B19 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		86C4F0EE27F2D42500E1AB43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86C4F0ED27F2D42500E1AB43 /* HouseBook6.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86C4F0EF27F2D42500E1AB43 /* HouseBook6 */ = {
+			isa = PBXGroup;
+			children = (
+				42320A73284A46C200C2A890 /* HouseBook6.entitlements */,
+				86CBC20C27FAEEBB007F192A /* Views */,
+				86CBC20927FABD3C007F192A /* Extensions */,
+				86C4F15127F2EDA700E1AB43 /* Controllers */,
+				86C4F0F027F2D42500E1AB43 /* AppDelegate.swift */,
+				86C4F0F227F2D42500E1AB43 /* SceneDelegate.swift */,
+				86C4F12027F2D7FC00E1AB43 /* User.swift */,
+				86C4F16727F6855100E1AB43 /* ChatRoom.swift */,
+				86C4F16927F6F3EA00E1AB43 /* Message.swift */,
+				42D7330628220BFB0033B7FA /* SuperCategory.swift */,
+				86647B572824AC8400491483 /* SubCategory.swift */,
+				42848BA1283751A90036B5CB /* CostMothSuperCategory.swift */,
+				4289B3D6282E299500B7B8BD /* Income.swift */,
+				42B5E5AD28323B42000E5DC2 /* FixedCost.swift */,
+				42AC4BB3283CB81D00C716BA /* DaySubCategory.swift */,
+				86C4F15227F2EDEB00E1AB43 /* Storyboards */,
+				86C4F0F927F2D42600E1AB43 /* Assets.xcassets */,
+				86C4F0FB27F2D42600E1AB43 /* LaunchScreen.storyboard */,
+				86C4F0FE27F2D42600E1AB43 /* Info.plist */,
+				86C4F14B27F2DF7D00E1AB43 /* GoogleService-Info.plist */,
+			);
+			path = HouseBook6;
+			sourceTree = "<group>";
+		};
+		86C4F15127F2EDA700E1AB43 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				86C4F13827F2DA4800E1AB43 /* TopViewController.swift */,
+				86C4F13A27F2DA6F00E1AB43 /* FirstLoginViewController.swift */,
+				86C4F13E27F2DAA800E1AB43 /* WelcomeLoginViewController.swift */,
+				86C4F13C27F2DA8900E1AB43 /* AlreadyLoginViewController.swift */,
+				86C4F14027F2DAB600E1AB43 /* PasswordViewController.swift */,
+				86C4F13627F2DA1B00E1AB43 /* HomeViewController.swift */,
+				428456A32835DC5E00FF7EF8 /* AddCollectionViewController.swift */,
+				86C4F14427F2DADF00E1AB43 /* CalendarViewController.swift */,
+				42AAC2F22817E16E004B967C /* DateManager.swift */,
+				429FB7E328128A2F00067EE7 /* dateDiaryCollectionViewCell.swift */,
+				429FB7E428128A2F00067EE7 /* dateDiaryCollectionViewCell.xib */,
+				42C48CC8283B52C00007617C /* DateContentCollectionViewCell.swift */,
+				42C48CC9283B52C00007617C /* DateContentCollectionViewCell.xib */,
+				42C48CC4283B49EF0007617C /* DateCategoryAndSumMoneyTableViewCell.swift */,
+				42C48CC5283B49EF0007617C /* DateCategoryAndSumMoneyTableViewCell.xib */,
+				42C48CC0283B49640007617C /* CategoryMoneyTableViewCell.swift */,
+				42C48CC1283B49640007617C /* CategoryMoneyTableViewCell.xib */,
+				86CBC21227FD262B007F192A /* InputViewController.swift */,
+				86F819A827FEC5BA00FCF325 /* InputCalculatorSemiModalViewController.swift */,
+				8670CC1D28016A3600A66426 /* InputCategorySemiModalViewController.swift */,
+				8670CC2328027D5D00A66426 /* InputSubCategorySemiModalViewController.swift */,
+				86C4F14827F2DAFA00E1AB43 /* NoteViewController.swift */,
+				86C4F16327F5E68200E1AB43 /* UserListViewController.swift */,
+				86C4F15527F2F12E00E1AB43 /* ChatRoomViewController.swift */,
+				4283F0F528470EA600855069 /* WhitchAddFriendsViewController.swift */,
+				4283F0ED284691B700855069 /* AddMemoFriendsViewController.swift */,
+				4283F0F128470AFD00855069 /* AddFriendsViewController.swift */,
+				86C4F14227F2DAD100E1AB43 /* DetailSettingViewController.swift */,
+				86E642FA2845A4B30025A8D8 /* DetailTextViewController.swift */,
+				4283F0FB28474C9500855069 /* DetailAccountViewController.swift */,
+				42A23DE42845DCF40088754D /* DetailAboutAppViewController.swift */,
+				42A23DEA2845E6080088754D /* DetailHowToUseViewController.swift */,
+				427938482846036600DAF41B /* DetailRecommendViewController.swift */,
+				4279384E284607A000DAF41B /* DetailFutureViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		86C4F15227F2EDEB00E1AB43 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				86C4F0F627F2D42500E1AB43 /* Main.storyboard */,
+				86C4F10627F2D4F200E1AB43 /* Top.storyboard */,
+				86C4F10A27F2D55700E1AB43 /* FirstLogin.storyboard */,
+				86C4F10C27F2D57C00E1AB43 /* WelcomeLogin.storyboard */,
+				86C4F10E27F2D59200E1AB43 /* AlreadyLogin.storyboard */,
+				86C4F11027F2D5B400E1AB43 /* Password.storyboard */,
+				86C4F11227F2D5CB00E1AB43 /* Home.storyboard */,
+				86C4F14D27F2EB3800E1AB43 /* incomeAndFixedCostCollectionViewCell.swift */,
+				86C4F14E27F2EB3800E1AB43 /* incomeAndFixedCostCollectionViewCell.xib */,
+				86C4F12227F2D87000E1AB43 /* incomeTableViewCell.swift */,
+				86C4F12327F2D87000E1AB43 /* incomeTableViewCell.xib */,
+				86C4F12627F2D8B000E1AB43 /* incomePlusMinusTableViewCell.swift */,
+				86C4F12727F2D8B000E1AB43 /* incomePlusMinusTableViewCell.xib */,
+				86C4F12A27F2D92900E1AB43 /* livingExpensesCollectionViewCell.swift */,
+				86C4F12B27F2D92900E1AB43 /* livingExpensesCollectionViewCell.xib */,
+				428456A12835DC3300FF7EF8 /* AddCollectionSemiModal.storyboard */,
+				86C4F11427F2D5F100E1AB43 /* DetailSetting.storyboard */,
+				86C4F12E27F2D98100E1AB43 /* DetailSettingTableViewCell.swift */,
+				86C4F12F27F2D98100E1AB43 /* DetailSettingTableViewCell.xib */,
+				86C4F13227F2D9C800E1AB43 /* ContactTableViewCell.swift */,
+				86C4F13327F2D9C800E1AB43 /* ContactTableViewCell.xib */,
+				86E642FC2845A4CA0025A8D8 /* DetailText.storyboard */,
+				4283F0F928474C7C00855069 /* DetailAccount.storyboard */,
+				42A23DE62845DD260088754D /* DetailAboutApp.storyboard */,
+				42A23DE82845E5EA0088754D /* DetailHowToUse.storyboard */,
+				4279384A2846038700DAF41B /* DetailRecommend.storyboard */,
+				4279384C2846075D00DAF41B /* DetailFuture.storyboard */,
+				86C4F11627F2D62E00E1AB43 /* Calendar.storyboard */,
+				86CBC21727FD4D50007F192A /* Input.storyboard */,
+				8670CC252802957C00A66426 /* InputCalculatorSemiModal.storyboard */,
+				8670CC1B28016A0700A66426 /* InputCategorySemiModal.storyboard */,
+				8670CC2128027D2100A66426 /* InputSubCategorySemiModal.storyboard */,
+				86C4F10427F2D49600E1AB43 /* Note.storyboard */,
+				86C4F15F27F5E56300E1AB43 /* UserList.storyboard */,
+				86C4F15327F2F0D200E1AB43 /* ChatRoom.storyboard */,
+				4283F0F328470E8200855069 /* WhitchAddFriends.storyboard */,
+				4283F0EB2846918F00855069 /* AddMemoFriends.storyboard */,
+				4283F0EF28470ACF00855069 /* AddFriends.storyboard */,
+				86C4F15727F2F4DA00E1AB43 /* partnerTableViewCell.swift */,
+				86C4F15827F2F4DA00E1AB43 /* partnerTableViewCell.xib */,
+				86C4F15B27F31D3800E1AB43 /* ChatInputAccessory.xib */,
+				86C4F15D27F31E4200E1AB43 /* ChatInputAccessoryView.swift */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		86CBC20927FABD3C007F192A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				86C4F11E27F2D7CC00E1AB43 /* UIColor-Extension.swift */,
+				86CBC20A27FABD64007F192A /* UIView-Extension.swift */,
+				86F819B428000FFE00FCF325 /* PassCaluculatorProtocol.swift */,
+				8670CC1F28016BD900A66426 /* PassCategoryProtocol.swift */,
+				42AAC2F4281964FA004B967C /* PassIncomeAndFixedCollectionCellProtocol.swift */,
+				42D73304282162B20033B7FA /* PassHomeViewFromInputViewProtocol.swift */,
+				86647B59282FE02200491483 /* PlusMinusProtocol.swift */,
+				86647B5B283136ED00491483 /* PlusMinusCollectionReloadProtocol.swift */,
+				42AF6E8228337B7900E5E6AE /* IncomeAndFixedToHomeProtocol.swift */,
+				4284569C2834978D00FF7EF8 /* HomeMonthToIncomeAndFixedProtocol.swift */,
+				4284569E2834F7FB00FF7EF8 /* HomeCollectionUpDateProtocol.swift */,
+				428BF916283607B900C1C9D1 /* AddCollectionViewCellProtocol.swift */,
+				4283F0F7284736DA00855069 /* UserListTableViewReloadProtocol.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		86CBC20C27FAEEBB007F192A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				86CBC20D27FAEEC9007F192A /* Calendar */,
+				86CBC21427FD26E1007F192A /* Input */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		86CBC20D27FAEEC9007F192A /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				86CBC20E27FAF098007F192A /* CalendarLabel.swift */,
+				86CBC21027FAF3AA007F192A /* CalendarImageView.swift */,
+				8670CC282803C50C00A66426 /* CalendarStackView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		86CBC21427FD26E1007F192A /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				86CBC21527FD2714007F192A /* InputLabel.swift */,
+				86CBC21927FD8EC2007F192A /* InputButton.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		CCC0327432F8C52DB3967CAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C5A18E3489511FBCE43732D /* Pods-HouseBook6.debug.xcconfig */,
+				CAFF069EF96C52C2004E8D11 /* Pods-HouseBook6.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D087D8CA8B568646FA782B19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5072B8E5C17244648DEE6F3 /* Pods_HouseBook6.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86C4F0EC27F2D42500E1AB43 /* HouseBook6 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86C4F10127F2D42600E1AB43 /* Build configuration list for PBXNativeTarget "HouseBook6" */;
+			buildPhases = (
+				3229014FB512FB634D02177D /* [CP] Check Pods Manifest.lock */,
+				86C4F0E927F2D42500E1AB43 /* Sources */,
+				86C4F0EA27F2D42500E1AB43 /* Frameworks */,
+				86C4F0EB27F2D42500E1AB43 /* Resources */,
+				9CFC2D3FB996CB0354A120D3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HouseBook6;
+			packageProductDependencies = (
+				86CBC20327FABB0E007F192A /* RxCocoa */,
+				86CBC20527FABB0E007F192A /* RxRelay */,
+				86CBC20727FABB0E007F192A /* RxSwift */,
+			);
+			productName = HouseBook6;
+			productReference = 86C4F0ED27F2D42500E1AB43 /* HouseBook6.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86C4F0E527F2D42500E1AB43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					86C4F0EC27F2D42500E1AB43 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 86C4F0E827F2D42500E1AB43 /* Build configuration list for PBXProject "HouseBook6" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 86C4F0E427F2D42500E1AB43;
+			packageReferences = (
+				86CBC20227FABB0E007F192A /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
+			productRefGroup = 86C4F0EE27F2D42500E1AB43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				86C4F0EC27F2D42500E1AB43 /* HouseBook6 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		86C4F0EB27F2D42500E1AB43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86C4F12527F2D87000E1AB43 /* incomeTableViewCell.xib in Resources */,
+				8670CC2228027D2100A66426 /* InputSubCategorySemiModal.storyboard in Resources */,
+				428456A22835DC3300FF7EF8 /* AddCollectionSemiModal.storyboard in Resources */,
+				86C4F11727F2D62E00E1AB43 /* Calendar.storyboard in Resources */,
+				8670CC262802957C00A66426 /* InputCalculatorSemiModal.storyboard in Resources */,
+				42A23DE72845DD260088754D /* DetailAboutApp.storyboard in Resources */,
+				429FB7E628128A2F00067EE7 /* dateDiaryCollectionViewCell.xib in Resources */,
+				86C4F10527F2D49600E1AB43 /* Note.storyboard in Resources */,
+				42C48CC7283B49EF0007617C /* DateCategoryAndSumMoneyTableViewCell.xib in Resources */,
+				86C4F15A27F2F4DA00E1AB43 /* partnerTableViewCell.xib in Resources */,
+				4279384B2846038800DAF41B /* DetailRecommend.storyboard in Resources */,
+				86C4F11327F2D5CB00E1AB43 /* Home.storyboard in Resources */,
+				86C4F12D27F2D92900E1AB43 /* livingExpensesCollectionViewCell.xib in Resources */,
+				86C4F10F27F2D59200E1AB43 /* AlreadyLogin.storyboard in Resources */,
+				4283F0EC2846918F00855069 /* AddMemoFriends.storyboard in Resources */,
+				86C4F13127F2D98200E1AB43 /* DetailSettingTableViewCell.xib in Resources */,
+				86CBC21827FD4D50007F192A /* Input.storyboard in Resources */,
+				86C4F0FD27F2D42600E1AB43 /* LaunchScreen.storyboard in Resources */,
+				8670CC1C28016A0700A66426 /* InputCategorySemiModal.storyboard in Resources */,
+				86C4F15C27F31D3800E1AB43 /* ChatInputAccessory.xib in Resources */,
+				86C4F0FA27F2D42600E1AB43 /* Assets.xcassets in Resources */,
+				86C4F10B27F2D55700E1AB43 /* FirstLogin.storyboard in Resources */,
+				4279384D2846075D00DAF41B /* DetailFuture.storyboard in Resources */,
+				86C4F15027F2EB3800E1AB43 /* incomeAndFixedCostCollectionViewCell.xib in Resources */,
+				86C4F11127F2D5B400E1AB43 /* Password.storyboard in Resources */,
+				86C4F11527F2D5F100E1AB43 /* DetailSetting.storyboard in Resources */,
+				86C4F13527F2D9C800E1AB43 /* ContactTableViewCell.xib in Resources */,
+				86E642FD2845A4CA0025A8D8 /* DetailText.storyboard in Resources */,
+				42C48CC3283B49640007617C /* CategoryMoneyTableViewCell.xib in Resources */,
+				4283F0F428470E8200855069 /* WhitchAddFriends.storyboard in Resources */,
+				42A23DE92845E5EA0088754D /* DetailHowToUse.storyboard in Resources */,
+				42C48CCB283B52C00007617C /* DateContentCollectionViewCell.xib in Resources */,
+				86C4F0F827F2D42500E1AB43 /* Main.storyboard in Resources */,
+				4283F0FA28474C7C00855069 /* DetailAccount.storyboard in Resources */,
+				86C4F10D27F2D57C00E1AB43 /* WelcomeLogin.storyboard in Resources */,
+				86C4F15427F2F0D200E1AB43 /* ChatRoom.storyboard in Resources */,
+				86C4F14C27F2DF7D00E1AB43 /* GoogleService-Info.plist in Resources */,
+				86C4F16027F5E56300E1AB43 /* UserList.storyboard in Resources */,
+				86C4F12927F2D8B000E1AB43 /* incomePlusMinusTableViewCell.xib in Resources */,
+				86C4F10727F2D4F200E1AB43 /* Top.storyboard in Resources */,
+				4283F0F028470ACF00855069 /* AddFriends.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3229014FB512FB634D02177D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HouseBook6-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CFC2D3FB996CB0354A120D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HouseBook6/Pods-HouseBook6-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HouseBook6/Pods-HouseBook6-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HouseBook6/Pods-HouseBook6-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86C4F0E927F2D42500E1AB43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42C48CC2283B49640007617C /* CategoryMoneyTableViewCell.swift in Sources */,
+				42848BA2283751A90036B5CB /* CostMothSuperCategory.swift in Sources */,
+				8670CC2028016BD900A66426 /* PassCategoryProtocol.swift in Sources */,
+				4283F0F8284736DA00855069 /* UserListTableViewReloadProtocol.swift in Sources */,
+				429FB7E528128A2F00067EE7 /* dateDiaryCollectionViewCell.swift in Sources */,
+				86C4F13027F2D98200E1AB43 /* DetailSettingTableViewCell.swift in Sources */,
+				86C4F15E27F31E4200E1AB43 /* ChatInputAccessoryView.swift in Sources */,
+				42A23DE52845DCF50088754D /* DetailAboutAppViewController.swift in Sources */,
+				86E642FB2845A4B30025A8D8 /* DetailTextViewController.swift in Sources */,
+				42D7330728220BFB0033B7FA /* SuperCategory.swift in Sources */,
+				86C4F14327F2DAD200E1AB43 /* DetailSettingViewController.swift in Sources */,
+				86C4F13427F2D9C800E1AB43 /* ContactTableViewCell.swift in Sources */,
+				86C4F12427F2D87000E1AB43 /* incomeTableViewCell.swift in Sources */,
+				4283F0F228470AFD00855069 /* AddFriendsViewController.swift in Sources */,
+				4284569F2834F7FB00FF7EF8 /* HomeCollectionUpDateProtocol.swift in Sources */,
+				8670CC292803C50C00A66426 /* CalendarStackView.swift in Sources */,
+				4283F0EE284691B700855069 /* AddMemoFriendsViewController.swift in Sources */,
+				86C4F11F27F2D7CC00E1AB43 /* UIColor-Extension.swift in Sources */,
+				86C4F14927F2DAFA00E1AB43 /* NoteViewController.swift in Sources */,
+				86C4F14127F2DAB600E1AB43 /* PasswordViewController.swift in Sources */,
+				4289B3D7282E299500B7B8BD /* Income.swift in Sources */,
+				86C4F16A27F6F3EA00E1AB43 /* Message.swift in Sources */,
+				86CBC21127FAF3AA007F192A /* CalendarImageView.swift in Sources */,
+				4279384F284607A000DAF41B /* DetailFutureViewController.swift in Sources */,
+				42D73305282162B20033B7FA /* PassHomeViewFromInputViewProtocol.swift in Sources */,
+				86C4F12C27F2D92900E1AB43 /* livingExpensesCollectionViewCell.swift in Sources */,
+				86C4F12127F2D7FC00E1AB43 /* User.swift in Sources */,
+				42B5E5AE28323B42000E5DC2 /* FixedCost.swift in Sources */,
+				8670CC2428027D5D00A66426 /* InputSubCategorySemiModalViewController.swift in Sources */,
+				4283F0FC28474C9500855069 /* DetailAccountViewController.swift in Sources */,
+				86CBC20B27FABD64007F192A /* UIView-Extension.swift in Sources */,
+				8670CC1E28016A3600A66426 /* InputCategorySemiModalViewController.swift in Sources */,
+				86C4F0F127F2D42500E1AB43 /* AppDelegate.swift in Sources */,
+				86C4F14527F2DADF00E1AB43 /* CalendarViewController.swift in Sources */,
+				42AAC2F32817E16E004B967C /* DateManager.swift in Sources */,
+				86C4F13B27F2DA6F00E1AB43 /* FirstLoginViewController.swift in Sources */,
+				428456A42835DC5E00FF7EF8 /* AddCollectionViewController.swift in Sources */,
+				4283F0F628470EA600855069 /* WhitchAddFriendsViewController.swift in Sources */,
+				86CBC21627FD2714007F192A /* InputLabel.swift in Sources */,
+				86C4F0F327F2D42500E1AB43 /* SceneDelegate.swift in Sources */,
+				42AC4BB4283CB81D00C716BA /* DaySubCategory.swift in Sources */,
+				86C4F15627F2F12E00E1AB43 /* ChatRoomViewController.swift in Sources */,
+				86C4F12827F2D8B000E1AB43 /* incomePlusMinusTableViewCell.swift in Sources */,
+				42A23DEB2845E6080088754D /* DetailHowToUseViewController.swift in Sources */,
+				42AF6E8328337B7900E5E6AE /* IncomeAndFixedToHomeProtocol.swift in Sources */,
+				427938492846036600DAF41B /* DetailRecommendViewController.swift in Sources */,
+				86C4F16427F5E68200E1AB43 /* UserListViewController.swift in Sources */,
+				86CBC21327FD262B007F192A /* InputViewController.swift in Sources */,
+				86C4F16827F6855100E1AB43 /* ChatRoom.swift in Sources */,
+				86CBC21A27FD8EC2007F192A /* InputButton.swift in Sources */,
+				86C4F13927F2DA4800E1AB43 /* TopViewController.swift in Sources */,
+				86CBC20F27FAF098007F192A /* CalendarLabel.swift in Sources */,
+				86647B5A282FE02200491483 /* PlusMinusProtocol.swift in Sources */,
+				86F819A927FEC5BA00FCF325 /* InputCalculatorSemiModalViewController.swift in Sources */,
+				4284569D2834978D00FF7EF8 /* HomeMonthToIncomeAndFixedProtocol.swift in Sources */,
+				86C4F13727F2DA1B00E1AB43 /* HomeViewController.swift in Sources */,
+				42C48CCA283B52C00007617C /* DateContentCollectionViewCell.swift in Sources */,
+				42AAC2F5281964FA004B967C /* PassIncomeAndFixedCollectionCellProtocol.swift in Sources */,
+				86C4F13F27F2DAA800E1AB43 /* WelcomeLoginViewController.swift in Sources */,
+				428BF917283607B900C1C9D1 /* AddCollectionViewCellProtocol.swift in Sources */,
+				86647B5C283136ED00491483 /* PlusMinusCollectionReloadProtocol.swift in Sources */,
+				86F819B528000FFE00FCF325 /* PassCaluculatorProtocol.swift in Sources */,
+				86647B582824AC8400491483 /* SubCategory.swift in Sources */,
+				42C48CC6283B49EF0007617C /* DateCategoryAndSumMoneyTableViewCell.swift in Sources */,
+				86C4F13D27F2DA8900E1AB43 /* AlreadyLoginViewController.swift in Sources */,
+				86C4F15927F2F4DA00E1AB43 /* partnerTableViewCell.swift in Sources */,
+				86C4F14F27F2EB3800E1AB43 /* incomeAndFixedCostCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		86C4F0F627F2D42500E1AB43 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86C4F0F727F2D42500E1AB43 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		86C4F0FB27F2D42600E1AB43 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86C4F0FC27F2D42600E1AB43 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		86C4F0FF27F2D42600E1AB43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		86C4F10027F2D42600E1AB43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86C4F10227F2D42600E1AB43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C5A18E3489511FBCE43732D /* Pods-HouseBook6.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HouseBook6/HouseBook6.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEVELOPMENT_TEAM = 96M8PRAQ5B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HouseBook6/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = 3Up2Down;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "プロフィール画像、メモ用のお店のプロフィール画像のためにアルバムにアクセスします。";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "許可するとあなたの好みの広告が表示されやすくなります。";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tokyo.swiftblog.3Up2DownHouseBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		86C4F10327F2D42600E1AB43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAFF069EF96C52C2004E8D11 /* Pods-HouseBook6.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HouseBook6/HouseBook6.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEVELOPMENT_TEAM = 96M8PRAQ5B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HouseBook6/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = 3Up2Down;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "プロフィール画像、メモ用のお店のプロフィール画像のためにアルバムにアクセスします。";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "許可するとあなたの好みの広告が表示されやすくなります。";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tokyo.swiftblog.3Up2DownHouseBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86C4F0E827F2D42500E1AB43 /* Build configuration list for PBXProject "HouseBook6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86C4F0FF27F2D42600E1AB43 /* Debug */,
+				86C4F10027F2D42600E1AB43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86C4F10127F2D42600E1AB43 /* Build configuration list for PBXNativeTarget "HouseBook6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86C4F10227F2D42600E1AB43 /* Debug */,
+				86C4F10327F2D42600E1AB43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		86CBC20227FABB0E007F192A /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = exactVersion;
+				version = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		86CBC20327FABB0E007F192A /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86CBC20227FABB0E007F192A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		86CBC20527FABB0E007F192A /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86CBC20227FABB0E007F192A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		86CBC20727FABB0E007F192A /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86CBC20227FABB0E007F192A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 86C4F0E527F2D42500E1AB43 /* Project object */;
+}

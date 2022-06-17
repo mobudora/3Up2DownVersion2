@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail Recommend View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="DetailRecommendViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="DetailRecommendViewController" customModule="HouseBook6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxw-Ae-qPP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="1422"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D0v-xb-grp">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7TV-c7-6Kd">
+                                                <rect key="frame" x="50" y="30" width="314" height="160"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sparkles" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qUP-Nj-F1a">
+                                                        <rect key="frame" x="68" y="22" width="178" height="115"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="qUP-Nj-F1a" secondAttribute="bottom" constant="23" id="7oL-CI-kFu"/>
+                                                    <constraint firstItem="qUP-Nj-F1a" firstAttribute="top" secondItem="7TV-c7-6Kd" secondAttribute="top" constant="23" id="V4v-uz-ind"/>
+                                                    <constraint firstItem="qUP-Nj-F1a" firstAttribute="leading" secondItem="7TV-c7-6Kd" secondAttribute="leading" constant="68" id="W6H-Qe-Ybq"/>
+                                                    <constraint firstAttribute="trailing" secondItem="qUP-Nj-F1a" secondAttribute="trailing" constant="68" id="nmd-Km-zw0"/>
+                                                    <constraint firstAttribute="height" constant="160" id="zbB-zm-nfS"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="開発者おすすめの貯金術" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhD-Wm-VIA">
+                                                <rect key="frame" x="10" y="220" width="394" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="貯金するには3ステップあると考えています。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkY-Fw-L2y">
+                                                <rect key="frame" x="10" y="264" width="394" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1ステップ：浪費を防ぐ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWS-Yp-nAA">
+                                                <rect key="frame" x="10" y="314.5" width="394" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94W-Fb-5L4">
+                                                <rect key="frame" x="10" y="358.5" width="394" height="243.5"/>
+                                                <string key="text" base64-UTF8="YES">
+6LKv6YeR44GM44Gn44GN44Gq44GE5Lq644Gu54m55b6044Go44GX44Gm44CB44GC44KM44KC44GT44KM
+44KC5aW944GN44Gq44KC44Gu44KS6LK344Gj44Gm44GX44G+44GG55mW44GM44GC44KK44G+44GZ44CC
+44GE44KP44KG44KL6KGd5YuV6LK344GE44Gn44GZ44CC44GT44KM44Gv5oCn5qC844Gr6L+R44GE44KC
+44Gu44GM44GC44KL44Gu44Gn44Gq44GL44Gq44GL44CB5aSJ44GI44KL44GT44Go44Gv44Gn44GN44Gq
+44GE44Go5oCd44GE44G+44GZ44GM44CB5rWq6LK744Gu5oSP6K2Y44Gv5bCR44GX44Gl44Gk5aSJ44GI
+44KL44GT44Go44GM44Gn44GN44G+44GZ44CCEeKAqA3jgZ3jga7jgZ/jgoHjgavmnInlirnjgarjga7j
+gYzjganjgozjgaDjgZHjgYrph5HjgpLkvb/jgaPjgabjgYTjgovjga7jgYvmiormj6HjgZnjgovjgZPj
+gajjgafjgZnjgIINEREREQroh6rliIbjgYzjganjgpPjgarjgoLjga7jgavjgYrph5HjgpLkvb/jgaPj
+gabjgYTjgabjganjgpPjgarnlJ/mtLvjgpLjgZfjgabjgYTjgovjgYsx44O25pyI44Gn44KC55+l44KL
+44GT44Go44GL44KJ5aeL44KB44KL44Go44GE44GE44GL44KC44GX44KM44G+44Gb44KT77yBA
+</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2ステップ：支出を見直す" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ej9-fL-K4z">
+                                                <rect key="frame" x="10" y="632" width="394" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wvg-ex-lgQ">
+                                                <rect key="frame" x="10" y="676" width="394" height="284.5"/>
+                                                <string key="text">浪費を止めることができれば、支出を見直します。特に意識してほしいのが「固定費」です。本当に「この携帯キャリアでいいのか？」「wi-fiでいいのか？」「車は本当に必要なのか？」 格安SIMにすることで容量も多く使えますし、大手キャリアよりも断然安いです。レンタカーにすることで、車という大きな固定費は無くなるかもしれません。 自分に固定費を問いかけていただいて、少しでも安いのがありそうと思えば見直してみるのもありですね。</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3ステップ：稼ぐor資産運用をする" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4T-Kw-3z4">
+                                                <rect key="frame" x="10" y="990.5" width="394" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvz-YK-sPJ">
+                                                <rect key="frame" x="10" y="1034.5" width="394" height="284.5"/>
+                                                <string key="text" base64-UTF8="YES">
+44Go44Gv6KiA44Gj44Gm44KC44CB44Gq44GL44Gq44GL5pyA5L2O6ZmQ44Gn5pqu44KJ44GX44Gm44GE
+44KL5Lq644KC5aSa44GE44Gv44Ga44Gn44GZ44CC44Gd44GT44Gn44GK44GZ44GZ44KB44Gq44Gu44GM
+44CB5Ymv5qWt44Gn56i844GE44Gg44KK44CB6LOH55Sj6YGL55So44KS44GX44Gm44Gf44Gg44GK6YeR
+44KS5a+d44GL44Gb44Gm44GK44GP44Gu44Gn44Gv44Gq44GP5oqV6LOH44Gr5Zue44GZ44GT44Go44Gn
+44GZ44CCEeKAqOKAqOeUmOOBhOipseOBr+S4luOBruS4reOBq+OBr+OBquOBhOOBruOBp+OAgeaKleiz
+h+OBp+OBguOCjOOBsOaVsCXjgYznm7jloLTjgafjgZnjgZfjgIHlia/mpa3jgafjgYLjgozjgbDoqZDm
+rLrnmoTjgarjgoLjga7jgoLlpJrjgYTjga7jgafmsJfjgpLjgaTjgZHjgabjgY/jgaDjgZXjgYTjgIIN
+4oCo44GK44GZ44GZ44KB44Gv44CB44OW44Ot44Kw44KEWW91VHViZeOAgeOCouODl+ODquS9nOOCiuOB
+quOBqeiHquWIhuOBruizh+eUoyjlvaIp44Go44GX44Gm5q6L44KL44KC44Gu44GM44GK44GZ44GZ44KB
+44Gn44GZ44CCCgrjgZPjga7ovrrjgorjga7lia/mpa3jgavplqLjgZfjgabjga/lg5Xjga7jg5bjg63j
+grDjgafjgoLoqJjkuovjgavjgZfjgabjgYTjgb7jgZnjga7jgaflj4LogIPjgavjgZfjgabjgb/jgabj
+gY/jgaDjgZXjgYTjgII
+</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="7TV-c7-6Kd" firstAttribute="leading" secondItem="D0v-xb-grp" secondAttribute="leading" constant="50" id="0ST-fV-Dhn"/>
+                                            <constraint firstAttribute="trailing" secondItem="Y4T-Kw-3z4" secondAttribute="trailing" constant="10" id="0Xd-P4-lyX"/>
+                                            <constraint firstAttribute="trailing" secondItem="94W-Fb-5L4" secondAttribute="trailing" constant="10" id="1k0-oS-O2d"/>
+                                            <constraint firstItem="Wvg-ex-lgQ" firstAttribute="top" secondItem="Ej9-fL-K4z" secondAttribute="bottom" constant="20" id="94k-pY-Wu3"/>
+                                            <constraint firstAttribute="trailing" secondItem="Wvg-ex-lgQ" secondAttribute="trailing" constant="10" id="Alb-Hy-bCE"/>
+                                            <constraint firstItem="Y4T-Kw-3z4" firstAttribute="top" secondItem="Wvg-ex-lgQ" secondAttribute="bottom" constant="30" id="Bfr-pf-k2G"/>
+                                            <constraint firstAttribute="trailing" secondItem="jvz-YK-sPJ" secondAttribute="trailing" constant="10" id="BjP-cX-Au6"/>
+                                            <constraint firstAttribute="trailing" secondItem="VhD-Wm-VIA" secondAttribute="trailing" constant="10" id="CSv-M8-Zjn"/>
+                                            <constraint firstAttribute="height" constant="1500" id="D11-c0-R5b"/>
+                                            <constraint firstAttribute="trailing" secondItem="tWS-Yp-nAA" secondAttribute="trailing" constant="10" id="F4h-mm-7xp"/>
+                                            <constraint firstItem="tWS-Yp-nAA" firstAttribute="leading" secondItem="D0v-xb-grp" secondAttribute="leading" constant="10" id="Fzb-R6-y0c"/>
+                                            <constraint firstItem="Ej9-fL-K4z" firstAttribute="leading" secondItem="D0v-xb-grp" secondAttribute="leading" constant="10" id="GWd-Hn-yE1"/>
+                                            <constraint firstItem="jvz-YK-sPJ" firstAttribute="top" secondItem="Y4T-Kw-3z4" secondAttribute="bottom" constant="20" id="JK3-CW-SIg"/>
+                                            <constraint firstItem="VhD-Wm-VIA" firstAttribute="leading" secondItem="D0v-xb-grp" secondAttribute="leading" constant="10" id="TnW-a0-JRU"/>
+                                            <constraint firstItem="nkY-Fw-L2y" firstAttribute="leading" secondItem="D0v-xb-grp" secondAttribute="leading" constant="10" id="Ugb-tb-DbA"/>
+                                            <constraint firstItem="94W-Fb-5L4" firstAttribute="leading" secondItem="D0v-xb-grp" secondAttribute="leading" constant="10" id="bE1-1U-gHu"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ej9-fL-K4z" secondAttribute="trailing" constant="10" id="hMc-ac-2Gf"/>
+                                            <constraint firstItem="nkY-Fw-L2y" firstAttribute="top" secondItem="VhD-Wm-VIA" secondAttribute="bottom" constant="20" id="ifx-Um-yaG"/>
+                                            <constraint firstItem="jvz-YK-sPJ" firstAttribute="leading" secondItem="D0v-xb-grp" secondAttribute="leading" constant="10" id="kmN-fD-3yR"/>
+                                            <constraint firstItem="Wvg-ex-lgQ" firstAttribute="leading" secondItem="D0v-xb-grp" secondAttribute="leading" constant="10" id="l4b-M5-NWD"/>
+                                            <constraint firstAttribute="trailing" secondItem="nkY-Fw-L2y" secondAttribute="trailing" constant="10" id="pFa-q5-MXA"/>
+                                            <constraint firstAttribute="trailing" secondItem="7TV-c7-6Kd" secondAttribute="trailing" constant="50" id="pPE-df-WB7"/>
+                                            <constraint firstItem="Ej9-fL-K4z" firstAttribute="top" secondItem="94W-Fb-5L4" secondAttribute="bottom" constant="30" id="sCx-DJ-pOR"/>
+                                            <constraint firstItem="Y4T-Kw-3z4" firstAttribute="leading" secondItem="D0v-xb-grp" secondAttribute="leading" constant="10" id="udM-tH-UWu"/>
+                                            <constraint firstItem="VhD-Wm-VIA" firstAttribute="top" secondItem="7TV-c7-6Kd" secondAttribute="bottom" constant="30" id="wLs-Un-Cmg"/>
+                                            <constraint firstItem="94W-Fb-5L4" firstAttribute="top" secondItem="tWS-Yp-nAA" secondAttribute="bottom" constant="20" id="wyO-7Y-9h2"/>
+                                            <constraint firstItem="7TV-c7-6Kd" firstAttribute="top" secondItem="D0v-xb-grp" secondAttribute="top" constant="30" id="y62-8t-YSh"/>
+                                            <constraint firstItem="tWS-Yp-nAA" firstAttribute="top" secondItem="nkY-Fw-L2y" secondAttribute="bottom" constant="30" id="yFm-re-xLP"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="D0v-xb-grp" secondAttribute="bottom" id="KzE-qx-GsG"/>
+                                    <constraint firstItem="D0v-xb-grp" firstAttribute="leading" secondItem="dxw-Ae-qPP" secondAttribute="leading" id="Lje-O5-1aX"/>
+                                    <constraint firstAttribute="trailing" secondItem="D0v-xb-grp" secondAttribute="trailing" id="k6p-gs-X2i"/>
+                                    <constraint firstItem="D0v-xb-grp" firstAttribute="width" secondItem="dxw-Ae-qPP" secondAttribute="width" id="nRV-rF-xlx"/>
+                                    <constraint firstItem="D0v-xb-grp" firstAttribute="top" secondItem="dxw-Ae-qPP" secondAttribute="top" id="zy3-tt-zRK"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="NG9-76-CGt"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ctY-lD-cia"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="dxw-Ae-qPP" secondAttribute="bottom" id="P9z-qT-jKV"/>
+                            <constraint firstItem="dxw-Ae-qPP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="VoC-Tg-9ih"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dxw-Ae-qPP" secondAttribute="trailing" id="dcu-ae-szr"/>
+                            <constraint firstItem="dxw-Ae-qPP" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="zpi-jv-wvD"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="1500"/>
+                    <connections>
+                        <outlet property="imageBackgroundView" destination="7TV-c7-6Kd" id="uvx-Rc-YCh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-42.028985507246382" y="150.66964285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sparkles" catalog="system" width="112" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

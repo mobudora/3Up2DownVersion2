@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HPj-Ub-ipY">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="XANO-mincho.ttf">
+            <string>XANO-mincho</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--User List View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="UserListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="UserListViewController" customModule="HouseBook6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fEM-lG-Il4">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="UserListTableViewCustomCell" rowHeight="80" id="xLj-uI-o0w" customClass="UserListTableViewCell" customModule="HouseBook6" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xLj-uI-o0w" id="NA2-bU-ueh">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zzf-1Y-0Sw">
+                                                    <rect key="frame" x="10" y="10" width="50" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="65k-gN-uLx"/>
+                                                        <constraint firstAttribute="width" secondItem="zzf-1Y-0Sw" secondAttribute="height" multiplier="1:1" id="LJc-rP-aRr"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="モブドラ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAV-TO-3WA">
+                                                    <rect key="frame" x="75" y="30" width="68" height="20"/>
+                                                    <fontDescription key="fontDescription" name="XANO-mincho" family="XANO-mincho" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="zzf-1Y-0Sw" firstAttribute="top" secondItem="NA2-bU-ueh" secondAttribute="top" constant="10" id="0at-x9-LIh"/>
+                                                <constraint firstItem="PAV-TO-3WA" firstAttribute="centerY" secondItem="NA2-bU-ueh" secondAttribute="centerY" id="6nC-4W-qBP"/>
+                                                <constraint firstAttribute="bottom" secondItem="zzf-1Y-0Sw" secondAttribute="bottom" constant="10" id="RjX-j5-xqo"/>
+                                                <constraint firstItem="zzf-1Y-0Sw" firstAttribute="centerY" secondItem="NA2-bU-ueh" secondAttribute="centerY" id="SCp-1h-jGC"/>
+                                                <constraint firstItem="zzf-1Y-0Sw" firstAttribute="leading" secondItem="NA2-bU-ueh" secondAttribute="leading" constant="10" id="TLz-Bs-dqp"/>
+                                                <constraint firstItem="PAV-TO-3WA" firstAttribute="leading" secondItem="zzf-1Y-0Sw" secondAttribute="trailing" constant="15" id="X1Y-in-kkX"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="userImageView" destination="zzf-1Y-0Sw" id="xMa-tr-Mea"/>
+                                            <outlet property="userNameLabel" destination="PAV-TO-3WA" id="062-Pf-PRL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="fEM-lG-Il4" secondAttribute="bottom" id="ACq-iN-XVa"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fEM-lG-Il4" secondAttribute="trailing" id="hVb-dg-1fv"/>
+                            <constraint firstItem="fEM-lG-Il4" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="pnr-wA-x93"/>
+                            <constraint firstItem="fEM-lG-Il4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="yCJ-PT-BWF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="c4Q-4x-Y73">
+                        <leftBarButtonItems>
+                            <barButtonItem image="chevron.backward" catalog="system" id="OcY-cd-r9h">
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <connections>
+                                    <action selector="tappedBackNavButton:" destination="Y6W-OH-hqX" id="h35-Ov-xvU"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem style="plain" id="KkN-DK-CiR">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="mZe-Zu-mdZ">
+                                    <rect key="frame" x="51" y="5" width="126" height="34.5"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="labelColor"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="会話に追加">
+                                        <fontDescription key="titleFontDescription" name="XANO-mincho" family="XANO-mincho" pointSize="17"/>
+                                    </buttonConfiguration>
+                                </button>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" id="A5w-dJ-lgA">
+                            <imageReference key="image" image="person.crop.circle.badge.plus" catalog="system" symbolScale="large"/>
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <connections>
+                                <action selector="plusMemoFriendsToCellAction:" destination="Y6W-OH-hqX" id="USZ-kZ-byv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addMemoFriendButton" destination="mZe-Zu-mdZ" id="NNw-ul-wRo"/>
+                        <outlet property="plusMemoFriendsToCell" destination="A5w-dJ-lgA" id="n13-v2-5pt"/>
+                        <outlet property="userListTableView" destination="fEM-lG-Il4" id="I45-7Y-Bnh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="809" y="115"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="y8C-Xh-QBR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HPj-Ub-ipY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GGy-3A-fyl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="G6F-lp-a0R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tAc-rw-Lwx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.086956521739133" y="107.8125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="person.crop.circle.badge.plus" catalog="system" width="128" height="113"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

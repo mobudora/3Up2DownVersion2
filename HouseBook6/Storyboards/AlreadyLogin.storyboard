@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wgc-V8-rbR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="XANO-mincho.ttf">
+            <string>XANO-mincho</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Already Login View Controller-->
+        <scene sceneID="l6B-bF-X2Q">
+            <objects>
+                <viewController storyboardIdentifier="AlreadyLoginViewController" modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wgc-V8-rbR" customClass="AlreadyLoginViewController" customModule="HouseBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wm1-YN-RBe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIF-vM-r33">
+                                <rect key="frame" x="32" y="94" width="350" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="69I-Yq-yQk"/>
+                                    <constraint firstAttribute="height" constant="80" id="Man-qt-ity"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="XANO-mincho" family="XANO-mincho" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="54z-Wj-edB">
+                                <rect key="frame" x="60" y="254" width="294" height="170"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9Ny-ts-Qvk">
+                                        <rect key="frame" x="0.0" y="0.0" width="294" height="72.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fb-ig-okW">
+                                                <rect key="frame" x="0.0" y="0.0" width="294" height="17"/>
+                                                <fontDescription key="fontDescription" name="XANO-mincho" family="XANO-mincho" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="メールアドレス" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mZP-wN-AEC">
+                                                <rect key="frame" x="0.0" y="17" width="294" height="55.5"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" name="XANO-mincho" family="XANO-mincho" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8gE-Sp-pQ2">
+                                        <rect key="frame" x="0.0" y="97.5" width="294" height="72.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="パスワード" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0R-R2-Iqf">
+                                                <rect key="frame" x="0.0" y="0.0" width="294" height="17"/>
+                                                <fontDescription key="fontDescription" name="XANO-mincho" family="XANO-mincho" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aX8-gI-MO3">
+                                                <rect key="frame" x="0.0" y="17" width="294" height="55.5"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" name="XANO-mincho" family="XANO-mincho" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="fgH-j6-UfG"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9l9-AA-tR2">
+                                <rect key="frame" x="107" y="464" width="200" height="40"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="GUl-vF-aok"/>
+                                    <constraint firstAttribute="width" constant="200" id="OoB-mK-PFa"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ログイン">
+                                    <fontDescription key="titleFontDescription" name="XANO-mincho" family="XANO-mincho" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goMainButton:" destination="wgc-V8-rbR" eventType="touchUpInside" id="001-os-g7S"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jfi-zU-J9Q">
+                                <rect key="frame" x="33.5" y="564" width="347" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="まだアカウントをお持ちでない方は" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CiI-i5-v5n">
+                                        <rect key="frame" x="0.0" y="0.0" width="272" height="40"/>
+                                        <fontDescription key="fontDescription" name="XANO-mincho" family="XANO-mincho" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsp-5s-2rg">
+                                        <rect key="frame" x="272" y="0.0" width="75" height="40"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="コチラ">
+                                            <fontDescription key="titleFontDescription" name="XANO-mincho" family="XANO-mincho" pointSize="17"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="goFirstLoginButton:" destination="wgc-V8-rbR" eventType="touchUpInside" id="7az-Ir-MhR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="kHD-4I-MCO"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NF0-NH-P22"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="54z-Wj-edB" firstAttribute="top" secondItem="WIF-vM-r33" secondAttribute="bottom" constant="80" id="2q7-Gl-UpC"/>
+                            <constraint firstItem="54z-Wj-edB" firstAttribute="leading" secondItem="NF0-NH-P22" secondAttribute="leading" constant="60" id="CPf-iZ-FEd"/>
+                            <constraint firstItem="jfi-zU-J9Q" firstAttribute="centerX" secondItem="Wm1-YN-RBe" secondAttribute="centerX" id="Nvj-DF-qAR"/>
+                            <constraint firstItem="WIF-vM-r33" firstAttribute="centerX" secondItem="Wm1-YN-RBe" secondAttribute="centerX" id="RCK-9K-ynI"/>
+                            <constraint firstItem="NF0-NH-P22" firstAttribute="trailing" secondItem="54z-Wj-edB" secondAttribute="trailing" constant="60" id="Y6U-UT-hpE"/>
+                            <constraint firstItem="jfi-zU-J9Q" firstAttribute="top" secondItem="9l9-AA-tR2" secondAttribute="bottom" constant="60" id="ujY-Jb-lpm"/>
+                            <constraint firstItem="WIF-vM-r33" firstAttribute="top" secondItem="NF0-NH-P22" secondAttribute="top" constant="50" id="x9k-gn-Wl2"/>
+                            <constraint firstItem="9l9-AA-tR2" firstAttribute="centerX" secondItem="Wm1-YN-RBe" secondAttribute="centerX" id="y6I-uC-Ozv"/>
+                            <constraint firstItem="9l9-AA-tR2" firstAttribute="top" secondItem="54z-Wj-edB" secondAttribute="bottom" constant="40" id="yCF-P0-VJL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pE1-bh-9GA"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="mZP-wN-AEC" id="798-uZ-VSG"/>
+                        <outlet property="loginButton" destination="9l9-AA-tR2" id="xQq-IJ-oBh"/>
+                        <outlet property="passwordTextField" destination="aX8-gI-MO3" id="Z50-ri-jYp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GIz-Te-oDg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="807.24637681159425" y="9.375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

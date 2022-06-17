@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomCell" id="gTV-IL-0wX" customClass="dateDiaryCollectionViewCell" customModule="HouseBook6" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="230" height="332"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="230" height="332"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4/20(月)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abB-Wh-yhE">
+                        <rect key="frame" x="0.0" y="0.0" width="230" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="E5m-YT-Cei"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1EJ-vO-Va1">
+                        <rect key="frame" x="0.0" y="44" width="230" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="内容" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ruh-cM-JEJ">
+                                <rect key="frame" x="0.0" y="0.0" width="115" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="金額" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xON-Kn-QfL">
+                                <rect key="frame" x="115" y="0.0" width="115" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="IKM-2R-KhZ"/>
+                        </constraints>
+                    </stackView>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="r0x-uS-WmU">
+                        <rect key="frame" x="0.0" y="88" width="230" height="200"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oDS-b3-e2I">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="e46-e6-SJe">
+                        <rect key="frame" x="0.0" y="288" width="230" height="44"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8k4-Xx-lmi">
+                                <rect key="frame" x="0.0" y="0.0" width="115" height="44"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="top" title="支出合計">
+                                    <imageReference key="image" image="checkmark.square" catalog="system" symbolScale="large"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="10"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="dateCostSUmAmountButtonAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="zrR-uv-Eav"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIy-IO-PuT">
+                                <rect key="frame" x="115" y="0.0" width="115" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="FKn-el-Rds"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="1EJ-vO-Va1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1mK-ee-FQH"/>
+                <constraint firstItem="e46-e6-SJe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Bek-4S-rQS"/>
+                <constraint firstAttribute="trailing" secondItem="e46-e6-SJe" secondAttribute="trailing" id="EKJ-Tr-8J1"/>
+                <constraint firstItem="abB-Wh-yhE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="FmW-SA-yaO"/>
+                <constraint firstItem="1EJ-vO-Va1" firstAttribute="top" secondItem="abB-Wh-yhE" secondAttribute="bottom" id="HHe-ac-tVS"/>
+                <constraint firstAttribute="trailing" secondItem="1EJ-vO-Va1" secondAttribute="trailing" id="RQI-UT-juW"/>
+                <constraint firstItem="r0x-uS-WmU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ri4-3v-11D"/>
+                <constraint firstAttribute="bottom" secondItem="e46-e6-SJe" secondAttribute="bottom" id="Rrv-by-zLc"/>
+                <constraint firstAttribute="trailing" secondItem="r0x-uS-WmU" secondAttribute="trailing" id="U1t-yN-VOe"/>
+                <constraint firstItem="abB-Wh-yhE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="YhP-wf-ktt"/>
+                <constraint firstItem="r0x-uS-WmU" firstAttribute="top" secondItem="1EJ-vO-Va1" secondAttribute="bottom" id="jrO-Hj-Y2b"/>
+                <constraint firstAttribute="trailing" secondItem="abB-Wh-yhE" secondAttribute="trailing" id="okm-rC-aS6"/>
+                <constraint firstItem="e46-e6-SJe" firstAttribute="top" secondItem="r0x-uS-WmU" secondAttribute="bottom" id="r93-X3-KE3"/>
+            </constraints>
+            <size key="customSize" width="230" height="332"/>
+            <connections>
+                <outlet property="dateCategoryCollectionView" destination="r0x-uS-WmU" id="gtK-oq-kyF"/>
+                <outlet property="dateCostSumAmountButton" destination="8k4-Xx-lmi" id="KR6-xS-79x"/>
+                <outlet property="dateCostSumAmountLabel" destination="LIy-IO-PuT" id="fam-b2-Uur"/>
+                <outlet property="tableH1Label" destination="abB-Wh-yhE" id="j7n-eq-ZCB"/>
+                <outlet property="tableH2HorizontalStackView" destination="1EJ-vO-Va1" id="QgV-Ms-H1H"/>
+            </connections>
+            <point key="canvasLocation" x="331.8840579710145" y="-60.267857142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark.square" catalog="system" width="128" height="114"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

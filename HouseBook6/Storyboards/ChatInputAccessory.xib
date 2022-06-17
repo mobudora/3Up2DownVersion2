@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatInputAccessoryView" customModule="HouseBook6" customModuleProvider="target">
+            <connections>
+                <outlet property="chatTextView" destination="fRE-Mr-raw" id="ObW-GM-Gcd"/>
+                <outlet property="sendButton" destination="cUa-gA-32w" id="WD4-Rb-GL7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="623" height="290"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" scrollEnabled="NO" text="メッセージがここに入ります。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fRE-Mr-raw">
+                    <rect key="frame" x="10" y="54" width="546.5" height="192"/>
+                    <color key="backgroundColor" systemColor="placeholderTextColor"/>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUa-gA-32w">
+                    <rect key="frame" x="566.5" y="134.5" width="46.5" height="31"/>
+                    <color key="tintColor" systemColor="labelColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="paperplane.fill" catalog="system"/>
+                    <connections>
+                        <action selector="tappedSendButton:" destination="-1" eventType="touchUpInside" id="xNV-EU-NSv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="cUa-gA-32w" firstAttribute="centerY" secondItem="fRE-Mr-raw" secondAttribute="centerY" id="GiA-lK-gci"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="fRE-Mr-raw" secondAttribute="bottom" constant="10" id="H2c-UA-ybN"/>
+                <constraint firstItem="fRE-Mr-raw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="PSx-ZF-RFF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cUa-gA-32w" secondAttribute="trailing" constant="10" id="bTB-e3-Hbt"/>
+                <constraint firstItem="fRE-Mr-raw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="fng-Mi-gyF"/>
+                <constraint firstItem="cUa-gA-32w" firstAttribute="leading" secondItem="fRE-Mr-raw" secondAttribute="trailing" constant="10" id="mDc-5U-qkv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="289.13043478260875" y="-89.0625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="paperplane.fill" catalog="system" width="128" height="118"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

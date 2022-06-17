@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UiF-kM-c3g">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="XANO-mincho.ttf">
+            <string>XANO-mincho</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Welcome Login View Controller-->
+        <scene sceneID="EIE-TD-CUr">
+            <objects>
+                <viewController storyboardIdentifier="welcomeViewController" modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UiF-kM-c3g" customClass="WelcomeLoginViewController" customModule="HouseBook6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sb6-hS-Qch">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odi-Uu-cnw">
+                                <rect key="frame" x="32" y="94" width="350" height="248"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="RTW-mW-xKE"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="ySf-hX-ehr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="XANO-mincho" family="XANO-mincho" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="sqT-ig-SXF">
+                                <rect key="frame" x="32" y="392" width="350" height="250"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="さんようこそ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1S-3N-cxT">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="51.5"/>
+                                        <fontDescription key="fontDescription" name="XANO-mincho" family="XANO-mincho" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKQ-5c-vXv">
+                                        <rect key="frame" x="0.0" y="66.5" width="350" height="51"/>
+                                        <fontDescription key="fontDescription" name="XANO-mincho" family="XANO-mincho" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="testpassword" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yB-OP-FqA">
+                                        <rect key="frame" x="0.0" y="132.5" width="350" height="51.5"/>
+                                        <fontDescription key="fontDescription" name="XANO-mincho" family="XANO-mincho" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 作成日：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kP5-a1-mMX">
+                                        <rect key="frame" x="0.0" y="199" width="350" height="51"/>
+                                        <fontDescription key="fontDescription" name="XANO-mincho" family="XANO-mincho" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="C3T-QU-hCO"/>
+                                    <constraint firstAttribute="height" constant="250" id="JdJ-TW-8ZH"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NC3-ax-t3P">
+                                <rect key="frame" x="57" y="712" width="300" height="50"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="emE-2S-kHD"/>
+                                    <constraint firstAttribute="height" constant="50" id="q3d-zu-N40"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <string key="title" base64-UTF8="YES">
+6KaL44GI44KL5YyW44GX44GmEQ3ml6XjgIXjga7lubjjgZvjgoTmgJ3jgYTlh7rjgpIxVVAhA
+</string>
+                                    <fontDescription key="titleFontDescription" name="XANO-mincho" family="XANO-mincho" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goTabBarButton:" destination="UiF-kM-c3g" eventType="touchUpInside" id="ekI-5y-M8t"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9BL-6g-3kG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9BL-6g-3kG" firstAttribute="bottom" secondItem="NC3-ax-t3P" secondAttribute="bottom" constant="100" id="S8U-80-ddh"/>
+                            <constraint firstItem="sqT-ig-SXF" firstAttribute="centerX" secondItem="Sb6-hS-Qch" secondAttribute="centerX" id="WV8-Sv-bbM"/>
+                            <constraint firstItem="odi-Uu-cnw" firstAttribute="centerX" secondItem="Sb6-hS-Qch" secondAttribute="centerX" id="rbq-ZX-o0H"/>
+                            <constraint firstItem="sqT-ig-SXF" firstAttribute="top" secondItem="odi-Uu-cnw" secondAttribute="bottom" constant="50" id="vzN-FG-u7h"/>
+                            <constraint firstItem="NC3-ax-t3P" firstAttribute="top" secondItem="sqT-ig-SXF" secondAttribute="bottom" constant="70" id="xd2-lq-sh6"/>
+                            <constraint firstItem="odi-Uu-cnw" firstAttribute="top" secondItem="9BL-6g-3kG" secondAttribute="top" constant="50" id="yfa-xg-r7R"/>
+                            <constraint firstItem="NC3-ax-t3P" firstAttribute="centerX" secondItem="Sb6-hS-Qch" secondAttribute="centerX" id="yfr-Xu-wWX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3al-Yk-LcL"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="kP5-a1-mMX" id="Gug-UY-l7Y"/>
+                        <outlet property="emailLabel" destination="MKQ-5c-vXv" id="bxX-st-YSq"/>
+                        <outlet property="goTabBarButton" destination="NC3-ax-t3P" id="nwp-rp-BjJ"/>
+                        <outlet property="nameLabel" destination="G1S-3N-cxT" id="KYU-W9-NTH"/>
+                        <outlet property="passwordLabel" destination="4yB-OP-FqA" id="6X5-tG-HuM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EN3-a8-Ea9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="598.55072463768124" y="130.58035714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

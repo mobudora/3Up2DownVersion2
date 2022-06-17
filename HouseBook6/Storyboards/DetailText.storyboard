@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail Text View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="DetailTextViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="DetailTextViewController" customModule="HouseBook6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="os8-HM-dxp">
+                                <rect key="frame" x="50" y="74" width="314" height="160"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HHZ-VU-gRr">
+                                        <rect key="frame" x="68" y="26" width="178" height="108.5"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <imageReference key="image" image="questionmark" catalog="system" symbolScale="small"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="HHZ-VU-gRr" secondAttribute="bottom" constant="23" id="2uz-PY-GtA"/>
+                                    <constraint firstItem="HHZ-VU-gRr" firstAttribute="top" secondItem="os8-HM-dxp" secondAttribute="top" constant="23" id="40g-YZ-raO"/>
+                                    <constraint firstAttribute="height" constant="160" id="AkD-c3-Pmk"/>
+                                    <constraint firstItem="HHZ-VU-gRr" firstAttribute="leading" secondItem="os8-HM-dxp" secondAttribute="leading" constant="68" id="Iwx-Co-GW4"/>
+                                    <constraint firstAttribute="trailing" secondItem="HHZ-VU-gRr" secondAttribute="trailing" constant="68" id="Lln-CC-Zbt"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="これから開発予定の機能です。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8e-Dh-tQX">
+                                <rect key="frame" x="10" y="264" width="394" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ylf-rN-Gz0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="os8-HM-dxp" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="1tH-9v-vOo"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="os8-HM-dxp" secondAttribute="trailing" constant="50" id="98k-Sh-ngf"/>
+                            <constraint firstItem="O8e-Dh-tQX" firstAttribute="top" secondItem="os8-HM-dxp" secondAttribute="bottom" constant="30" id="di3-ct-blM"/>
+                            <constraint firstItem="O8e-Dh-tQX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="r79-Ht-8zP"/>
+                            <constraint firstItem="os8-HM-dxp" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="rNw-iY-cGC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="O8e-Dh-tQX" secondAttribute="trailing" constant="10" id="wPl-Vh-Hqd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailTextLabel" destination="O8e-Dh-tQX" id="wTl-P9-yJA"/>
+                        <outlet property="imageBackgroundView" destination="os8-HM-dxp" id="Dfa-KI-L5b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="127.90178571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="questionmark" catalog="system" width="96" height="128"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

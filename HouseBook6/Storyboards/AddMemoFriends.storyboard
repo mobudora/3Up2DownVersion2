@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="XANO-mincho.ttf">
+            <string>XANO-mincho</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Add Memo Friends View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="AddMemoFriendsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="AddMemoFriendsViewController" customModule="HouseBook6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メモ用のお店を追加" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6x-F6-G6D">
+                                <rect key="frame" x="70" y="74" width="274" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSL-bD-mvD">
+                                <rect key="frame" x="127" y="118" width="160" height="160"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wSL-bD-mvD" secondAttribute="height" multiplier="1:1" id="lnE-0j-uvy"/>
+                                    <constraint firstAttribute="width" constant="160" id="ukT-WX-Qcp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="XANO-mincho" family="XANO-mincho" pointSize="14"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="プロフィール画像"/>
+                                <connections>
+                                    <action selector="userProfileImageButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Q1j-oU-OBL"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bF8-jf-2XC">
+                                <rect key="frame" x="20" y="298" width="374" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfH-NQ-k4T">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="お店の名前を入力して下さい" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PI5-bw-BZO">
+                                        <rect key="frame" x="0.0" y="50" width="374" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="JN6-UR-0RL"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p11-m6-GSX">
+                                <rect key="frame" x="100" y="418" width="214" height="31"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="person.crop.circle.badge.plus" catalog="system" title="メモ友を追加"/>
+                                <connections>
+                                    <action selector="addMemoFriendsToFirestoreButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="FqQ-S8-iRL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="b6x-F6-G6D" secondAttribute="trailing" constant="70" id="7MW-fb-fEx"/>
+                            <constraint firstItem="b6x-F6-G6D" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="70" id="B5c-TH-tjG"/>
+                            <constraint firstItem="wSL-bD-mvD" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Gcu-eu-QLK"/>
+                            <constraint firstItem="wSL-bD-mvD" firstAttribute="top" secondItem="b6x-F6-G6D" secondAttribute="bottom" constant="20" id="XJd-g1-TVN"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="p11-m6-GSX" secondAttribute="trailing" constant="100" id="axe-Dg-qUi"/>
+                            <constraint firstItem="bF8-jf-2XC" firstAttribute="top" secondItem="wSL-bD-mvD" secondAttribute="bottom" constant="20" id="kFb-KT-MUT"/>
+                            <constraint firstItem="b6x-F6-G6D" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="lLG-St-h1h"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="bF8-jf-2XC" secondAttribute="trailing" constant="20" id="oh6-hm-LF3"/>
+                            <constraint firstItem="bF8-jf-2XC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="on1-kh-DcG"/>
+                            <constraint firstItem="p11-m6-GSX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="100" id="r3K-PL-IfE"/>
+                            <constraint firstItem="p11-m6-GSX" firstAttribute="top" secondItem="bF8-jf-2XC" secondAttribute="bottom" constant="20" id="yjV-Nm-Luy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addMemoFriendsToFirestoreButton" destination="p11-m6-GSX" id="sUf-iR-pme"/>
+                        <outlet property="nameTextFieled" destination="PI5-bw-BZO" id="yd4-Ca-EOk"/>
+                        <outlet property="userProfileImageButton" destination="wSL-bD-mvD" id="CBe-t4-7WM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-81.159420289855078" y="206.91964285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person.crop.circle.badge.plus" catalog="system" width="128" height="113"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

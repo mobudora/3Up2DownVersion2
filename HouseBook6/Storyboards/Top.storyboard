@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YUO-Os-zso">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Top View Controller-->
+        <scene sceneID="cVZ-Ng-9M3">
+            <objects>
+                <viewController storyboardIdentifier="TopViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eF3-1E-gEy" customClass="TopViewController" customModule="HouseBook6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W2A-sH-D2m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFD-lY-fcM">
+                                <rect key="frame" x="57" y="682" width="300" height="40"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Hml-3o-Ear"/>
+                                    <constraint firstAttribute="height" constant="40" id="bDJ-Cn-TAH"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="新規登録">
+                                    <fontDescription key="titleFontDescription" name="XANO-mincho" family="XANO-mincho" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goFirstLoginButton:" destination="eF3-1E-gEy" eventType="touchUpInside" id="5pe-Ha-GRS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZZ-8b-7tq">
+                                <rect key="frame" x="57" y="752" width="300" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="c1o-bB-Y1A"/>
+                                    <constraint firstAttribute="width" constant="300" id="vIm-vG-YGR"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ログイン">
+                                    <fontDescription key="titleFontDescription" name="XANO-mincho" family="XANO-mincho" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goAlreadyLoginButton:" destination="eF3-1E-gEy" eventType="touchUpInside" id="2ch-NH-WAP"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoHouseWork" translatesAutoresizingMaskIntoConstraints="NO" id="D7h-lJ-4sJ">
+                                <rect key="frame" x="32" y="203" width="350" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="L86-gM-4aH"/>
+                                    <constraint firstAttribute="height" constant="350" id="hEt-gF-RpB"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YLp-iI-Xvg"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="D7h-lJ-4sJ" firstAttribute="top" secondItem="YLp-iI-Xvg" secondAttribute="top" constant="115" id="GMz-ic-kwT"/>
+                            <constraint firstItem="SFD-lY-fcM" firstAttribute="centerX" secondItem="W2A-sH-D2m" secondAttribute="centerX" id="IeJ-KV-Bw1"/>
+                            <constraint firstItem="YLp-iI-Xvg" firstAttribute="bottom" secondItem="fZZ-8b-7tq" secondAttribute="bottom" constant="70" id="T6q-k6-ymf"/>
+                            <constraint firstItem="fZZ-8b-7tq" firstAttribute="top" secondItem="SFD-lY-fcM" secondAttribute="bottom" constant="30" id="hNr-u5-Qld"/>
+                            <constraint firstItem="fZZ-8b-7tq" firstAttribute="centerX" secondItem="W2A-sH-D2m" secondAttribute="centerX" id="jEY-Q1-zb0"/>
+                            <constraint firstItem="D7h-lJ-4sJ" firstAttribute="centerX" secondItem="W2A-sH-D2m" secondAttribute="centerX" id="uh2-ik-1B4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oXL-bR-tsN"/>
+                    <connections>
+                        <outlet property="goAlreadyLoginButton" destination="fZZ-8b-7tq" id="S3A-av-OzX"/>
+                        <outlet property="goFirstLoginButton" destination="SFD-lY-fcM" id="Toh-oS-hUG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Di-S4-KYO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="971.01449275362324" y="124.55357142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jKh-Pf-hcG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YUO-Os-zso" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="r5E-x6-VUe">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eF3-1E-gEy" kind="relationship" relationship="rootViewController" id="UD7-9J-Sug"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wJo-iZ-ej3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60.869565217391312" y="124.55357142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LogoHouseWork" width="1042" height="1042"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
